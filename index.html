@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Kushka - Justicia en tu propia lengua</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec13",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#102210",
+                        "andean-slate": "#1e2c1e",
+                        "andean-gold": "#d4af37",
+                        "andean-red": "#bc4b51",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        :root {
+            --primary-color: #13ec13;
+        }
+        body {
+            font-family: "Public Sans", sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .ios-glass {
+            background: rgba(246, 248, 246, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .dark .ios-glass {
+            background: rgba(16, 34, 16, 0.85);
+        }.lang-select-wrapper select {
+            appearance: none;
+            background: transparent;
+            border: none;
+            padding-right: 1.2rem;
+            cursor: pointer;
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-andean-slate dark:text-background-light font-display antialiased">
+    <header class="sticky top-0 z-50 ios-glass border-b border-primary/10">
+        <div class="max-w-md mx-auto px-5 py-4 flex justify-between items-center">
+            <div class="flex flex-col">
+                <span
+                    class="text-2xl font-800 tracking-tighter text-andean-slate dark:text-white flex items-center gap-1">
+                    <span class="w-1.5 h-6 bg-primary rounded-full"></span>
+                    KUSHKA
+                </span>
+                <span class="text-[9px] uppercase tracking-widest text-primary font-bold">Justicia en tu lengua</span>
+            </div>
+            <div class="flex items-center gap-3">
+                <div
+                    class="relative lang-select-wrapper flex items-center gap-1 bg-andean-slate/5 dark:bg-white/5 px-2 py-1.5 rounded-lg border border-primary/10">
+                    <span
+                        class="material-symbols-outlined text-[18px] text-andean-slate/60 dark:text-white/60">language</span>
+                    <select
+                        class="text-[11px] font-bold text-andean-slate/80 dark:text-white/80 focus:ring-0 focus:outline-none uppercase bg-transparent p-0 border-none">
+                        <option value="es">ES</option>
+                        <option value="qu">QU</option>
+                        <option value="en">EN</option>
+                    </select>
+                </div>
+                <a class="bg-primary hover:bg-primary/90 text-background-dark font-bold px-4 py-2 rounded-full text-xs transition-all active:scale-95 shadow-md shadow-primary/20"
+                    href="#contacto">
+                    Contactar
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="max-w-md mx-auto pb-12">
+        <section class="relative px-6 pt-12 pb-16 overflow-hidden bg-gradient-to-b from-primary/10 to-transparent">
+            <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+                <div class="grid grid-cols-6 h-full w-full">
+                    <div class="border-r border-andean-slate"></div>
+                    <div class="border-r border-andean-slate"></div>
+                    <div class="border-r border-andean-slate"></div>
+                    <div class="border-r border-andean-slate"></div>
+                    <div class="border-r border-andean-slate"></div>
+                    <div class="border-r border-andean-slate"></div>
+                </div>
+            </div>
+            <div class="relative z-10 text-center">
+                <span
+                    class="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-[10px] font-bold uppercase tracking-widest mb-4">LegalTech
+                    Intercultural</span>
+                <h1 class="text-4xl font-800 leading-[1.1] mb-6 text-andean-slate dark:text-white">
+                    Democratizando la justicia para el <span class="text-primary">mundo andino</span>
+                </h1>
+                <p
+                    class="text-lg text-andean-slate/70 dark:text-background-light/70 mb-8 leading-relaxed max-w-[90%] mx-auto">
+                    IA bilingüe diseñada para cerrar la brecha legal entre el Estado y los ciudadanos quechuahablantes.
+                </p>
+                <div class="flex flex-col gap-3 px-4">
+                    <button
+                        class="w-full bg-andean-slate dark:bg-primary text-white dark:text-background-dark font-bold py-4 rounded-xl flex items-center justify-center gap-2 shadow-xl shadow-andean-slate/20 dark:shadow-primary/20 transition-transform active:scale-95">
+                        Explorar Soluciones <span class="material-icons text-sm">arrow_forward</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="px-6 py-8 space-y-6">
+            <div class="bg-andean-red/5 border border-andean-red/20 rounded-2xl p-6 shadow-sm">
+                <div class="flex items-center gap-2 mb-4">
+                    <div class="bg-andean-red/10 p-2 rounded-lg">
+                        <span class="material-icons text-andean-red text-xl">warning</span>
+                    </div>
+                    <span class="font-bold text-andean-red uppercase tracking-tighter text-sm">La Brecha</span>
+                </div>
+                <h3 class="text-xl font-bold mb-3">4 Millones de Ciudadanos</h3>
+                <p class="text-sm text-andean-slate/80 dark:text-background-light/80 leading-relaxed">
+                    Actualmente, millones de quechuahablantes enfrentan procesos legales en una lengua que no dominan,
+                    perdiendo derechos fundamentales por falta de entendimiento.
+                </p>
+            </div>
+            <div class="bg-primary/10 border border-primary/30 rounded-2xl p-6 relative overflow-hidden shadow-sm">
+                <div class="absolute -right-6 -top-6 opacity-10">
+                    <span class="material-icons text-[140px] text-primary">auto_awesome</span>
+                </div>
+                <div class="flex items-center gap-2 mb-5">
+                    <div class="bg-primary/20 p-2 rounded-lg">
+                        <span class="material-icons text-primary text-xl">verified</span>
+                    </div>
+                    <span class="font-bold text-primary uppercase tracking-tighter text-sm">Nuestra Solución</span>
+                </div>
+                <div class="space-y-6 relative z-10">
+                    <div class="flex gap-4">
+                        <div class="bg-white/60 dark:bg-white/10 p-3 rounded-xl shrink-0 shadow-sm">
+                            <span class="material-icons text-primary">record_voice_over</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-base mb-1">Voz IA</h4>
+                            <p class="text-xs opacity-70 leading-relaxed">Traducción simultánea jurídica voz-a-texto en
+                                Quechua de alta precisión.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="bg-white/60 dark:bg-white/10 p-3 rounded-xl shrink-0 shadow-sm">
+                            <span class="material-icons text-primary">document_scanner</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-base mb-1">Escaneo Inteligente</h4>
+                            <p class="text-xs opacity-70 leading-relaxed">Análisis OCR de documentos legales complejos
+                                con resumen bilingüe instantáneo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="px-6 py-12">
+            <h2 class="text-2xl font-800 mb-8 text-center italic">Modelo de Ecosistema</h2>
+            <div class="grid grid-cols-3 gap-3">
+                <div class="text-center group">
+                    <div
+                        class="w-full aspect-square bg-white dark:bg-andean-slate shadow-sm border border-primary/5 rounded-2xl flex items-center justify-center mb-3 transition-all active:scale-95 active:bg-primary/5">
+                        <span class="material-icons text-3xl text-primary">account_balance</span>
+                    </div>
+                    <p class="text-[10px] font-800 uppercase tracking-tighter">Gobierno</p>
+                    <p class="text-[9px] opacity-40 font-bold">B2G</p>
+                </div>
+                <div class="text-center group">
+                    <div
+                        class="w-full aspect-square bg-white dark:bg-andean-slate shadow-sm border border-primary/5 rounded-2xl flex items-center justify-center mb-3 transition-all active:scale-95 active:bg-primary/5">
+                        <span class="material-icons text-3xl text-primary">gavel</span>
+                    </div>
+                    <p class="text-[10px] font-800 uppercase tracking-tighter">Notarías</p>
+                    <p class="text-[9px] opacity-40 font-bold">B2B</p>
+                </div>
+                <div class="text-center group">
+                    <div
+                        class="w-full aspect-square bg-white dark:bg-andean-slate shadow-sm border border-primary/5 rounded-2xl flex items-center justify-center mb-3 transition-all active:scale-95 active:bg-primary/5">
+                        <span class="material-icons text-3xl text-primary">groups</span>
+                    </div>
+                    <p class="text-[10px] font-800 uppercase tracking-tighter">Ciudadanos</p>
+                    <p class="text-[9px] opacity-40 font-bold">Freemium</p>
+                </div>
+            </div>
+        </section>
+        <section class="px-6 py-14 bg-andean-slate text-white rounded-t-[2.5rem] mt-4">
+            <h2 class="text-xl font-800 mb-12 text-center tracking-tight">Impacto Multidimensional</h2>
+            <div class="grid grid-cols-3 gap-4">
+                <div class="flex flex-col items-center">
+                    <div class="relative w-16 h-16 flex items-center justify-center">
+                        <svg class="w-full h-full -rotate-90">
+                            <circle class="text-white/10" cx="32" cy="32" fill="transparent" r="28"
+                                stroke="currentColor" stroke-width="4"></circle>
+                            <circle class="text-primary" cx="32" cy="32" fill="transparent" r="28" stroke="currentColor"
+                                stroke-dasharray="175" stroke-dashoffset="40" stroke-linecap="round" stroke-width="4">
+                            </circle>
+                        </svg>
+                        <span class="absolute text-xs font-bold">95%</span>
+                    </div>
+                    <p class="mt-4 text-[10px] font-bold uppercase tracking-widest text-center">Social</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="relative w-16 h-16 flex items-center justify-center">
+                        <svg class="w-full h-full -rotate-90">
+                            <circle class="text-white/10" cx="32" cy="32" fill="transparent" r="28"
+                                stroke="currentColor" stroke-width="4"></circle>
+                            <circle class="text-primary" cx="32" cy="32" fill="transparent" r="28" stroke="currentColor"
+                                stroke-dasharray="175" stroke-dashoffset="80" stroke-linecap="round" stroke-width="4">
+                            </circle>
+                        </svg>
+                        <span class="absolute text-xs font-bold">70%</span>
+                    </div>
+                    <p class="mt-4 text-[10px] font-bold uppercase tracking-widest text-center">Económico</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="relative w-16 h-16 flex items-center justify-center">
+                        <svg class="w-full h-full -rotate-90">
+                            <circle class="text-white/10" cx="32" cy="32" fill="transparent" r="28"
+                                stroke="currentColor" stroke-width="4"></circle>
+                            <circle class="text-primary" cx="32" cy="32" fill="transparent" r="28" stroke="currentColor"
+                                stroke-dasharray="175" stroke-dashoffset="10" stroke-linecap="round" stroke-width="4">
+                            </circle>
+                        </svg>
+                        <span class="absolute text-xs font-bold">100%</span>
+                    </div>
+                    <p class="mt-4 text-[10px] font-bold uppercase tracking-widest text-center">Cultural</p>
+                </div>
+            </div>
+            <div class="mt-12 px-6">
+                <p class="text-xs text-white/60 text-center italic leading-relaxed">
+                    "Buscamos no solo traducir palabras, sino traducir derechos y dignidad para cada habitante de los
+                    Andes."
+                </p>
+            </div>
+        </section>
+        <section class="px-6 py-16 bg-white dark:bg-background-dark">
+            <h2 class="text-2xl font-800 mb-10 px-2">El Equipo</h2>
+            <div class="space-y-10">
+                <div class="flex items-center gap-6 p-4 rounded-2xl bg-background-light/50 dark:bg-white/5">
+                    <div class="relative shrink-0">
+                        <div class="absolute -inset-1 bg-primary rounded-full blur-[4px] opacity-20"></div>
+                        <img alt="Paolo Lache"
+                            class="w-20 h-20 rounded-full object-cover border-2 border-primary relative z-10"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5oAWem5KRmKuRmjS98iThf5DjR-hz5N8RDxwfLV2TwVwYEXWPN28T2WEqUZGz6BcWtF3VZDAI_TSfMRh2nbn8gQjyYRRuXapI8DfmJ0c3SQYWWeAIJ1CaEbvDYAul78OR3KmYCP-H6Ph3b4l2r3nLP9I6bs9uOF3fuZ9eOy8lSWqHsi_Gcv4K5sXmkIQwHEujxK9BuGixSgPw5q-sne1C3VqYMEXjbm_gOmtsV6Rn4rH_vmnH0CUXvXsQajOLm3eUaTo9UgCB0IM" />
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg">Paolo Lache</h4>
+                        <p class="text-primary text-xs font-bold uppercase tracking-wider mb-2">Fundador &amp; CEO</p>
+                        <p class="text-[11px] opacity-70 leading-snug">Estratega tecnológico apasionado por el impacto
+                            social y la IA aplicada al lenguaje.</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-6 p-4 rounded-2xl bg-background-light/50 dark:bg-white/5">
+                    <div class="relative shrink-0">
+                        <img alt="Legal Partner"
+                            class="w-20 h-20 rounded-full object-cover border-2 border-andean-slate/20 dark:border-white/10"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuHkQ0v3PuKEMoVjd1SO8uxJBVt6m2KyVBA_sC10DK3UQSr_bhZLeSLPKtY13yT8o9wF_Du_NdkEqd9L7TovzVHZccl-6oudYJteqISVjKJSeUXp4lPI6v93OXJOwEzxVyToaDTSYvGCIc8QOVXmXG4T-x9BjAqskv372QYxn3fhk5tnfjQCYIf3iBt_4o9P_djx2ZpiCIUyVZrjkATUaqWmj6k5GGxisUOSXfzZEbGUVZEDlrQYNNIKKCNBcep-ZDMcuWxAqCe2o" />
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg">Dra. M. Yupanqui</h4>
+                        <p class="text-primary text-xs font-bold uppercase tracking-wider mb-2">Socia Legal</p>
+                        <p class="text-[11px] opacity-70 leading-snug">Experta en derecho intercultural y defensora de
+                            lenguas originarias en el sistema judicial.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="px-6 py-16 bg-background-light dark:bg-andean-slate border-t border-primary/20" id="contacto">
+            <div class="text-center mb-10">
+                <h2 class="text-2xl font-800 mb-3 px-4">Únete a la revolución legal</h2>
+                <p class="text-sm opacity-70">Estamos construyendo el futuro de la justicia bilingüe. Cuéntanos cómo
+                    quieres sumarte.</p>
+            </div>
+            <form class="space-y-4 max-w-sm mx-auto" onsubmit="return false;">
+                <div class="space-y-1">
+                    <label class="text-[10px] font-bold uppercase tracking-widest ml-2 opacity-50">Nombre
+                        Completo</label>
+                    <input
+                        class="w-full bg-white dark:bg-background-dark border-primary/10 rounded-xl px-4 py-4 text-sm focus:ring-primary focus:border-primary shadow-sm"
+                        placeholder="Ej. Juan Quispe" type="text" />
+                </div>
+                <div class="space-y-1">
+                    <label class="text-[10px] font-bold uppercase tracking-widest ml-2 opacity-50">Correo
+                        Electrónico</label>
+                    <input
+                        class="w-full bg-white dark:bg-background-dark border-primary/10 rounded-xl px-4 py-4 text-sm focus:ring-primary focus:border-primary shadow-sm"
+                        placeholder="email@ejemplo.com" type="email" />
+                </div>
+                <div class="space-y-1">
+                    <label class="text-[10px] font-bold uppercase tracking-widest ml-2 opacity-50">Interés
+                        Principal</label>
+                    <div class="relative">
+                        <select
+                            class="w-full bg-white dark:bg-background-dark border-primary/10 rounded-xl px-4 py-4 text-sm focus:ring-primary focus:border-primary appearance-none shadow-sm">
+                            <option>Inversor / Venture Capital</option>
+                            <option>Partner Público / Gobierno</option>
+                            <option>Usuario / Profesional Legal</option>
+                            <option>Prensa / Otros</option>
+                        </select>
+                        <div class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none opacity-40">
+                            <span class="material-icons text-sm">expand_more</span>
+                        </div>
+                    </div>
+                </div>
+                <button
+                    class="w-full bg-primary text-background-dark font-800 py-5 rounded-xl shadow-xl shadow-primary/20 mt-6 active:scale-95 transition-all">
+                    ENVIAR PROPUESTA
+                </button>
+            </form>
+            <div class="mt-20 text-center space-y-6">
+                <div class="flex justify-center gap-8 opacity-40">
+                    <span class="material-icons text-2xl">facebook</span>
+                    <span class="material-icons text-2xl">language</span>
+                    <span class="material-icons text-2xl">alternate_email</span>
+                </div>
+                <div class="space-y-2">
+                    <p class="text-[10px] font-bold tracking-[0.2em] opacity-30">KUSHKA LEGALTECH © 2024</p>
+                    <p class="text-[8px] font-medium opacity-20">Diseñado para el impacto intercultural</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
